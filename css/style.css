@@ -1,0 +1,310 @@
+@import url('https://fonts.googleapis.com/css2?family=Odor+Mean+Chey&family=Open+Sans:wght@400;500;800&display=swap');
+
+/* FONTS 
+font-family: 'Odor Mean Chey', serif;
+font-family: 'Open Sans', sans-serif;
+*/
+
+/* COLORS  
+#009065
+#555555
+#c7c7c7
+*/
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Open Sans', sans-serif;
+    color: #555555;
+}
+
+body {
+    line-height: 1.5;
+}
+
+/* Set Max-width Of Content */
+.wrapper {
+    width: 100%;
+    height: auto;
+    max-width: 60rem;
+    margin: auto;
+}
+
+/* Set Responsive Image */
+img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Mobile Text Style */
+h1 {
+    font-family: 'Odor Mean Chey', serif;
+}
+
+h2 {
+    font-family: 'Odor Mean Chey', serif;
+}
+
+p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 0.75rem;
+}
+
+li {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 0.75rem;
+}
+
+/* HEADER STYLE */
+.header-logo {
+    width: 10rem;
+    height: auto;
+}
+
+.header-style {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1.5rem 1.5rem 1rem 1.5rem;
+}
+
+/* Desktop Navigation Style */
+.desktop ul {
+    font-family: 'Open Sans', sans-serif;
+    list-style: none;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+.desktop ul li {
+    font-size: 1rem;
+    margin: 2.5rem;
+}
+
+.desktop ul a {
+    color: #009065;
+    text-decoration: none;
+}
+
+.desktop ul a:hover {
+    color: #555555;
+}
+
+/* Mobile Navigation Style */
+/* Style Hamburger Menu Icon */
+.mobile i {
+    font-size: 1.5rem;
+    margin: 1rem;
+    margin: 0;
+    padding: 0;
+}
+
+/* Style ul a li of Mobile Nav */
+.mobile ul {
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    list-style: none;
+    background-color: #009065;
+    margin: 1.5rem;
+    padding: 0;
+}
+
+.mobile ul li {
+    height: 3rem;
+    width: 6rem;
+    display: flex;
+    align-items: center;
+    font-size: 0.75rem;
+    padding-left: 1.2rem;
+}
+
+.mobile ul a {
+    color: white;
+    text-decoration: none;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.mobile ul a:hover {
+    color: #009065;
+    background-color: white;
+}
+
+/* JavaScript Hamburger Menu */
+.topnav {
+    position: relative;
+    z-index: 1000;
+}
+
+.topnav {
+    transform: translateY(-150%);
+    transition: transform 0.5s;
+    transition-delay: 0.5s;
+}
+
+nav .show {
+    transform: translateY(0);
+}
+
+i {
+    color: white;
+    font-size: 2.2rem;
+    margin: 0.5rem;
+}
+
+.mobile .show {
+    display: flex;
+}
+
+/* Masthead Style */
+.masthead {
+    margin: 0 1.5rem;
+}
+
+/* MAIN STYLE */
+/* Buttons Style */
+button {
+    border: none;
+    cursor: pointer;
+    appearance: none;
+    background-color: inherit;
+}
+
+button img {
+    width: 60px;
+    height: 60px;
+}
+
+#active-button {
+    border-bottom: 3px solid #009065;
+}
+
+.buttons {
+    margin: 1.5rem;
+    margin-top: 2rem;
+}
+
+/* Main Content Style */
+.html-dynamic {
+    margin: 1.5rem;
+    margin-top: 2.5rem;
+}
+
+
+
+/* FOOTER STYLE */
+footer {
+    margin: 1.5rem;
+}
+
+.social-icon {
+    border-top: 2px solid #c7c7c7;
+    padding-top: 1.5rem;
+}
+
+.social-icon i {
+    font-size: 2rem;
+}
+
+.footer-text {
+    margin: 1.5rem 0;
+}
+
+.footer-text a {
+    font-size: 0.75rem;
+    color: #555555;
+    text-decoration: none;
+    padding: 0 0.5rem;
+    border-right: 1px solid #555555;
+}
+
+.footer-text a:last-child {
+    border-right: none;
+}
+
+.footer-text a:hover {
+    text-decoration: underline;
+}
+
+.copyright {
+    font-weight: 800;
+    margin: 2rem 0;
+}
+
+/* Media Query Table And Desktop View for 480px & larger */
+@media screen and (min-width: 30rem) {
+    /* Table And Desktop Text Style */
+    p {
+        font-size: 1rem;
+    }
+
+    li {
+        font-size: 1rem;
+    }
+
+    /* HEADER STYLE */
+    .header-logo{
+        width: 15rem;
+        height: auto;
+    }
+
+    .desktop ul {
+        display: flex;
+    }
+
+    .mobile {
+        display: none;
+    }
+
+    /* MAIN STYLE */
+    button img {
+        width: 80px;
+        height: 80px;
+    }
+
+    /* Float Style */
+    .img-float {
+        float: left;
+        width: 40%;
+        margin-right: 1.5rem;
+    }
+    
+    .clearfix {
+        overflow: auto;
+        margin-bottom: 5rem;
+    }
+
+    .float {
+        margin-bottom: 6rem;
+    }
+
+    /* FOOTER STYLE */
+    .social-icon {
+        padding-top: 3.5rem;
+    }
+
+    .social-icon i {
+        padding-right: 0.2rem;
+        font-size: 2.5rem;
+    }
+
+    .footer-text {
+        padding-top: 1rem;
+    }
+
+    .footer-text a {
+        font-size: 1rem;
+    }
+
+    .copyright {
+        margin: 4rem 0;
+    }
+}
